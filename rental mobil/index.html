@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Program Rental Mobil</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <div></div>
+            <form>
+                <div class="formCariNilai" action="">
+                    <p><i class="fas fa-info-circle"></i>Info harga</p>
+                </div>
+                <table border="1">
+                    <tr>
+                        <th>*</th>
+                        <th>Avanza</th>
+                        <th>CRV</th>
+                        <th>Ayla</th>
+                    </tr>
+                    <tr>
+                        <td>Sewa per hari</td>
+                        <td>300000</td>
+                        <td>400000</td>
+                        <td>250000</td>
+                    </tr>
+                </table>
+
+                <select class="inputNilai" id="inputMobil">
+                    <option id="">Pilihan Mobil</option>
+                    <option>Avanza</option>
+                    <option>CRV</option>
+                    <option>Ayla</option>
+                </select>
+                <input class="inputNilai" id="inputDurasi" type="number" placeholder="Lama sewa (satuan hari)">
+                <input class="btnHitung" type="button" value="Hitung" id="buttonHitungRental">
+            </form>
+            </div>
+            </div>
+        </div>
+        <div class="tabelHasil">
+            <table class="answerTable">
+                <tr>
+                    <td class="label label-total">Total</td>
+                    <td class="price" id="harga"></td>
+                </tr>
+                <tr>
+                    <td class="price price-total" id="totalBayar"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="btnBack">
+            <a href="index.html">Back to Home</a>
+        </div>
+
+        <script src="rental.js"></script>
+    </main>
+
+</body>
+</html>

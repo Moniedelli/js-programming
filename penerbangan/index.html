@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Program Pesawat Terbang</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <div></div>
+            <form>
+                <div class="formCariNilai" action="">
+                    <p><i class="fas fa-info-circle"></i>Info harga</p>
+                </div>
+                <table border="1">
+                    <tr>
+                        <th>*</th>
+                        <th>Bandung</th>
+                        <th>Yogyakarta</th>
+                        <th>Bali</th>
+                    </tr>
+                    <tr>
+                        <td>Ekonomi</td>
+                        <td>600000</td>
+                        <td>800000</td>
+                        <td>1000000</td>
+                    </tr>
+                    <tr>
+                        <td>VIP</td>
+                        <td>1200000</td>
+                        <td>1000000</td>
+                        <td>1500000</td>
+                    </tr>
+                </table>
+
+                <select class="inputNilai" id="inputKelas">
+                    <option id="">Pilih Kelas</option>
+                    <option>Ekonomi</option>
+                    <option>VIP</option>
+                </select>
+                <select class="inputNilai" id="inputKota">
+                    <option>Pilih tujuan</option>
+                    <option>Bandung</option>
+                    <option>Yogyakarta</option>
+                    <option>Bali</option>
+                </select>
+                <p><i class="fas fa-info-circle"></i>Jika pesan tiket lebih dari 10, dapat diskon 5%</p>
+                <input class="inputNilai" inputNilai-jtiket id="jumlahTiket" type="number" placeholder="Jumlah Tiket">
+                <input class="btnHitung" type="button" value="Hitung" id="buttonHitungTiket">
+            </form>
+            </div>
+            </div>
+        </div>
+        <div class="tabelHasil">
+            <table class="answerTable">
+                <tr>
+                    <td class="label">Harga sebelum Diskon</td>
+                    <td class="price" id="harga"></td>
+                </tr>
+                <tr>
+                    <td class="label">Diskon</td>
+                    <td class="price" id="discount"></td>
+                </tr>
+                <tr>
+                    <td class="price price-total" id="total"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="btnBack">
+            <a href="index.html">Back to Home</a>
+        </div>
+
+        <script src="js.js"></script>
+    </main>
+
+</body>
+</html>
